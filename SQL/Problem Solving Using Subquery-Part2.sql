@@ -76,6 +76,9 @@ where department_id not in
 
 
 -- Q7. Find employees not assigned to any project
+select * from employees
+where emp_id not in (
+SELECT emp_id from employee_projects);
 
 
 
